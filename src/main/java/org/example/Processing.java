@@ -4,17 +4,17 @@ import processing.core.PApplet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main extends PApplet{
+public class Processing extends PApplet{
     public static final int  WIDTH= 1080;
     public static final int HEIGHT = 720;
     public static final int RADIUS = 75;
     public static List<MyCircle> circles = new ArrayList<>();
 
     public static void main(String[] args) {
-        PApplet.main("org.example.Main",args);
+        PApplet.main("org.example.Processing",args);
     }
 
-    public Main(){
+    public Processing(){
         circles.add(new MyCircle(this,0, HEIGHT/5, RADIUS, 2));
         circles.add(new MyCircle(this,0, 2*HEIGHT/5, RADIUS, 4));
         circles.add(new MyCircle(this,0, 3*HEIGHT/5, RADIUS, 6));
